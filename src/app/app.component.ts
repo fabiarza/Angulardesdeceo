@@ -17,7 +17,7 @@ import { EmpleadoComponent } from "./empleado/empleado.component";
 //Estas propiedades luego puedo usarlos con etiquetas HTML  o solos
 export class AppComponent {
   title = 'miPrimeraAppAngular';
-  texto ='Estoy feliz de Aprender Angular v17 que felicidad'
+  texto ='Estoy feliz de Aprender Angular v17.'
 }
 //Video 7 Interpolacion de Strings
 
