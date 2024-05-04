@@ -19,5 +19,12 @@ export class AppComponent {
   title = 'miPrimeraAppAngular';
   texto ='Estoy feliz de Aprender Angular v17.'
 }
-//Video 7 Interpolacion de Strings
+//Video 7 Interpolacion de Strings = ES USAR LAS PROPIEDADES DE LA CLASE ENTRE LLAVES
+//EN EL HTML
+
+//Video 9
+//Property Binding:Unir elemento de typescript  y html en html
+
+//Video 10
+//Event Binding:
 

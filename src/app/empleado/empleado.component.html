@@ -1,3 +1,63 @@
-<p style="text-align: center;">Aqui ira el empleado</p>
+<p>Nombre :{{nombre}} </p>
 
-<p style="text-align: center;">{{titul}}</p>
+<p>Apellido :{{apellido}}</p><!--esto es InTERPOLACION-->
+
+<p>Ingresa tu Edad : </p>
+
+<input   type="text"  #edad (keyup)="2"/>
+ 
+<p>{{edad.value >="18" ? "Eres Mayor"  :"Eres Menor"}}</p>
+
+
+
+<br>
+<br>
+<p>Nombre de tu Empresa</p>
+<!--hago interpolacion de String {{}}-->
+<p>Empresa :{{empresa}}</p>
+
+
+<!--<input type="text" #empresa [disabled]="cuadroDialogo" (keypress)="0" ><br/>-->
+Ingresa la Empresa : <input type="text" [(ngModel)]="empresa">
+
+
+
+
+
+<br/>
+<br/>
+<!---Haciendo Interpolacion de String-->
+{{textDeUsuarioRegistrado}}<br/>
+
+<!--Aqui hago uso de Property binding usando los []-->
+Registrado : <input type="radio" value="si"  name="nregistro" id="registro"
+ [checked]="checkboxActivo"
+(click)="setUsuarioRegistrado($event)"><br/>
+<!--Aqui uso el Evento click  en Angular se le  llama Event binding-->
+
+No Registrado : <input type="radio" value="no"
+  name="nregistro" id="registro" (click)="setUsuarioRegistrado($event)">
+<br/>
+<br/>
+ 
+
+<!--<input value="Enviar" style="width: 60px;" type="button" [disabled]="btnActivo"
+ (click)="activarBtn()" >-->
+
+ <br/>
+<br/>
+
+ <button [disabled]="btnActivo"
+     (click)="activarBtn()"  [style.color]="btnActivo ? 'red': 'green'">
+     Botón de Ejemplo</button> 
+
+ 
+
+
+
+
+
+
+
+
+
